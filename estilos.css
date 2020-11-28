@@ -1,0 +1,41 @@
+			table{
+				width: 80%;
+				margin: 0 auto;
+			}
+			#td_l38{
+				width:200px;
+				height: 237px;
+				background-image:url(img/margarita.jpg);
+			}
+			#titulo{
+				font-size: 48px;
+				color: purple;
+				text-align:center;
+			}
+			#td_l44{
+				background-color:#00FFE2;
+				text-align:center;
+			}
+			#span_l45{
+				font-weight:bold;
+				font-size:24px;
+			}
+			.cuerpo h4{
+				text-decoration:underline
+			}
+			
+			.cuerpo img{
+				width:300px
+			}
+			#cascada{
+				font-style:italic
+			}
+			#td_l89{
+				background-color:#00FFE2;
+				text-align:center;
+				vertical-align:top;
+				width:20%;
+			}
+			#ul{
+				text-align:left
+			}
