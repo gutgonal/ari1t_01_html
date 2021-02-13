@@ -44,35 +44,36 @@
 						];
 						
 						echo $compañeros[$_GET['x']];
+						
 					?>
 						</center></td>
 						<td><center><b>Nombre de Compañero en JS</b></br>
 						<div id="nombre"></div>
 						
 						<script>
-						compañero[]{
-						'1':'IVAN',
-						'2':'ANDRES',
-						'3':'SERGIO',
-						'4':'ANDRES',
-						'5':'EDUARDO',
-						'6':'HECTOR',
-						'7':'ALBERTO',
-						'8':'PABLO DELEGADO',
-						'9':'PABLO',
-						'10':'JAURY',
-						'11':'PABLO',
-						'12':'VALENTIN',
-						'13':'SERGIO',
-						'14':'FRANCISCO',
-						};
-						function buscar(){
-						x=document.getElementById('x').value;						
-												
-						if(true){
-						document.getElementById('compañero').innerHTML = compañero['x'];
-						}
-						}
+						
+						x=document.getElementById('x').value;
+										
+						compañeros =[
+						'IVAN',
+						'ANDRES',
+						'SERGIO',
+						'ANDRES',
+						'EDUARDO',
+						'HECTOR',
+						'ALBERTO',
+						'PABLO DELEGADO',
+						'PABLO',
+						'JAURY',
+						'PABLO',
+						'VALENTIN',
+						'SERGIO',
+						'FRANCISCO',
+						];
+						
+						document.getElementById('nombre').innerHTML=compañeros[x-1];		
+						console.log("hola");
+						
 						
 						</script>
 						</center>
