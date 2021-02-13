@@ -8,7 +8,7 @@
 			<tr>
 				<td bgcolor="00FFE2" >
 					<center>
-					<br><img src="img/Clase.jpg" width="300"></br>
+					<br><img src="img/clase.jpg" width="300"></br>
 					</br>
 					<h3>Crea un array con el nombre de tus compañeros, en qué puesto se sienta y</br>
 					selecciona uno de ellos al azar	indicando su nombre y puesto</br>
