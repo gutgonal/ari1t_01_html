@@ -16,9 +16,9 @@
 					  </br>
 					</br>					
 					<form>
-					año inicial"X"<input id="x" name="x" onkeyup="calcular()" />
-					Segunda fecha"Y"<input id="y" name="y" onkeyup="calcular()" />
-					Suma de los años en el año "Y"<input id="z" name="z" onkeyup="calcular()" />
+					año inicial"X"<input id="x" name="x" onkeyup="calcular()"value=<?=$_GET['x']?> />
+					Segunda fecha"Y"<input id="y" name="y" onkeyup="calcular()"value=<?=$_GET['y']?> />
+					Suma de los años en el año "Y"<input id="z" name="z" onkeyup="calcular()"value=<?=$_GET['z']?> />
 					</br>
 					</br><button>CALCULAR</button>
 					</br>
@@ -56,13 +56,19 @@
 						$x=$_GET['x'];
 						$y=$_GET['y'];
 						$z=$_GET['z'];
-						echo edad maria en X php;
-						echo (($z-(($y-$x)*2))/4); 
-						echo año nacimiento maria en php;
-						echo $x-(($z-(($y-$x)*2))/4);
-						echo años de madre cuando nacio en php;
-						echo 2*(($z-(($y-$x)*2))/4);
+						echo "edad maria en X php";
+						echo"</br>";
+						echo round(($z-(($y-$x)*2))/4,0);
+						echo"</br>";						
+						echo "año nacimiento maria en php";
+						echo"</br>";
+						echo round ($x-(($z-(($y-$x)*2))/4),0);
+						echo"</br>";
+						echo "años de madre cuando nacio en php";
+						echo"</br>";
+						echo round (((($z-(($y-$x)*2))/4)*2),0);
 					?>
+				
 					
 					</center>
 				</td>

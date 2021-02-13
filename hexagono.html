@@ -14,7 +14,7 @@
 					Halla la apotema de un hexágono regular de "X" cm de lado.</br>
 					</br>					
 					<form>
-					lado del hexagono<input id="x" name="x" onkeyup="calcular()" />						
+					lado del hexagono<input id="x" name="x" onkeyup="calcular()"value=<?=$_GET['x']?> />						
 					</br>
 					</br><button>CALCULAR</button>
 					</br>
@@ -37,8 +37,9 @@
 					
 					<?php
 						$x=$_GET['x'];
-						echo apotema del hexagono en php;
-						echo ($x*1.732/2*),2;						
+						echo "apotema del hexagono en php";
+						echo"</br>";
+						echo round(($x*1.732/2),3);						
 					?>
 					
 					</center>
