@@ -5,7 +5,7 @@
 	<body>
 	<?php
 						if(!isset($_GET['x']))
-						$x=$_GET['x']=r;
+						$x=$_GET['x']='r';
 						?>
 
 		<CENTER>
@@ -17,11 +17,12 @@
 					</br>
 					<h3>Muestra el listado ordenado de días de la semana que contengan la letra deseada</br></h3>						
 					<form>
-					<button onclick="generar()">BUSCAR</button>
+					<button>BUSCAR</button>
 					<input id="x" name="x" onkeyup="buscador()" value=<?=$_GET['x']?> />
 					
 					</form>
-					los dias de la semana con <div id="x"></div> en JS son:
+					
+					Los dias de la semana con esa letra en JS son:
 					<div id="dias"></div>
 									
 						<script>
@@ -39,6 +40,7 @@
 							if(true){
 								
 							x=document.getElementById('x').value;
+							
 								for(i=0;i<7;i++){
 									
 									if(semana[i].indexOf(x) != -1){
@@ -53,7 +55,39 @@
 
 						</script>
 						
-					
+					<?php
+						
+						$semana=[
+							'lunes',
+							'martes',
+							'miercoles',
+							'jueves',
+							'viernes',
+							'sabado',
+							'domingo'
+							];
+						
+							if(true){
+							$x=$_GET['x'];	
+							echo"</br>";
+							echo"Los dias de la semana con ";
+							echo $x;
+							echo" en PHP son:";
+							echo"</br>";
+							
+							
+								for($i=0;$i<7;$i++){
+									
+									if (strlen(strstr($semana[$i],$x))>0) {
+									echo $semana[$i];	
+									echo ","; 
+									}
+								}
+							}
+						
+							
+						
+					?>
 					
 					
 					
